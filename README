@@ -1,22 +1,23 @@
 # Curso de Java
 
-Este repositorio contiene una guía detallada sobre el lenguaje de programación Java, desde sus fundamentos históricos hasta las características más avanzadas de la plataforma.
-Historia de Java
+Este repositorio contiene una guia detallada sobre el lenguaje de programacion Java, desde sus fundamentos historicos hasta las caracteristicas mas avanzadas de la plataforma.
 
-Java fue creado originalmente por James Gosling en Sun Microsystems y lanzado en 1995. Su filosofía principal es "Write Once, Run Anywhere" (Escríbelo una vez, ejecútalo en cualquier lugar), lo que significa que el código compilado puede ejecutarse en todas las plataformas que admitan Java sin necesidad de volver a compilarlo. Esto es posible gracias a la Máquina Virtual de Java (JVM).
+## Historia de Java
+
+Java fue creado originalmente por James Gosling en Sun Microsystems y lanzado en 1995. Su filosofia principal es **"Write Once, Run Anywhere"** (Escríbelo una vez, ejecútalo en cualquier lugar), lo que significa que el codigo compilado puede ejecutarse en todas las plataformas que admitan Java sin necesidad de volver a compilarlo. Esto es posible gracias a la **Maquina Virtual de Java (JVM)**.
 
 A lo largo de los años, Java ha evolucionado de ser un lenguaje para aplicaciones web en el navegador a ser la base de aplicaciones empresariales masivas, desarrollo de Android y sistemas de procesamiento de datos a gran escala.
-Requisitos de Instalación
+
+## Requisitos de Instalacion
 
 Para ejecutar y desarrollar los ejemplos contenidos en este repositorio, es necesario contar con los siguientes elementos:
 
-    Java Development Kit (JDK): Se recomienda la versión 17 o superior (LTS).
+1. **Java Development Kit (JDK):** Se recomienda la version 17 o superior (LTS).
+2. **Variable de Entorno:** Configurar la variable `JAVA_HOME` apuntando al directorio de instalacion del JDK.
+3. **IDE o Editor:** Se sugiere IntelliJ IDEA, Eclipse o Visual Studio Code con extensiones de Java.
+4. **Herramienta de Construccion:** Opcionalmente Maven o Gradle para la gestion de dependencias.
 
-    Variable de Entorno: Configurar la variable JAVA_HOME apuntando al directorio de instalación del JDK.
-
-    IDE o Editor: Se sugiere IntelliJ IDEA, Eclipse o Visual Studio Code con extensiones de Java.
-
-    Herramienta de Construcción: Opcionalmente Maven o Gradle para la gestión de dependencias.
+---
 
 ## Indice de Conceptos y Ejemplos
 
@@ -24,32 +25,32 @@ La siguiente tabla detalla los temas cubiertos en este repositorio. Cada enlace 
 
 | Nº | Concepto | Breve descripcion | Ejemplo Java |
 |---:|:---|:---|:---|
-| 1 | Variables | Espacio en memoria cuyo valor puede modificarse. | [src/Variables.java](./src/Variables.java) |
-| 2 | Constantes | Valores inmutables declarados con la palabra final. | [src/Constantes.java](./src/Constantes.java) |
-| 3 | Operadores logicos | Uso de conectores booleanos como and, or y not. | [src/Variables.java](./src/Variables.java) |
-| 4 | Control de flujo | Sentencias condicionales y bucles de repeticion. | [src/ControlFlujo.java](./src/ControlFlujo.java) |
-| 5 | Tipos primitivos | Formatos de datos basicos como enteros y decimales. | [src/TiposPrimitivos.java](./src/TiposPrimitivos.java) |
-| 6 | Conversion y parsing | Transformacion de tipos y uso de clases wrapper. | [src/ConversionParsing.java](./src/ConversionParsing.java) |
-| 7 | Colecciones | Estructuras para almacenar grupos de objetos. | [src/ColeccionesEjemplo.java](./src/ColeccionesEjemplo.java) |
-| 8 | Genericos | Definicion de estructuras con tipos parametrizados. | [src/GenericosEjemplo.java](./src/GenericosEjemplo.java) |
-| 9 | Lambdas | Implementacion de funciones anonimas y compactas. | [src/LambdasEjemplo.java](./src/LambdasEjemplo.java) |
-| 10 | Streams | Procesamiento de flujos de datos de forma funcional. | [src/StreamsEjemplo.java](./src/StreamsEjemplo.java) |
-| 11 | Optional | Contenedor para prevenir errores de puntero nulo. | [src/OptionalEjemplo.java](./src/OptionalEjemplo.java) |
-| 12 | Entrada/Salida basica | Interaccion con la consola mediante Scanner y Print. | [src/IOClasico.java](./src/IOClasico.java) |
-| 13 | Serializacion | Proceso de convertir objetos en flujos de bytes. | [src/SerializacionEjemplo.java](./src/SerializacionEjemplo.java) |
-| 14 | NIO (Buffers) | Gestion eficiente de entrada y salida de datos. | [src/NIOEjemplo.java](./src/NIOEjemplo.java) |
-| 15 | NIO.2 (WatchService) | Deteccion de eventos en el sistema de archivos. | [src/NIO2Ejemplo.java](./src/NIO2Ejemplo.java) |
-| 16 | Compresion (ZIP) | Empaquetado y lectura de archivos comprimidos. | [src/CompresionEjemplo.java](./src/CompresionEjemplo.java) |
-| 17 | Hilos basicos | Ejecucion simultanea de tareas mediante Thread. | [src/HilosBasicos.java](./src/HilosBasicos.java) |
-| 18 | ExecutorService | Administracion avanzada de hilos concurrentes. | [src/ExecutorEjemplo.java](./src/ExecutorEjemplo.java) |
-| 19 | Colecciones Concurrentes | Estructuras de datos seguras para multi-hilo. | [src/ConcurrentCollections.java](./src/ConcurrentCollections.java) |
-| 20 | Locks | Control de acceso a recursos mediante bloqueos. | [src/LocksEjemplo.java](./src/LocksEjemplo.java) |
-| 21 | Coordinacion | Sincronizacion de tareas entre diferentes hilos. | [src/CoordinacionEjemplo.java](./src/CoordinacionEjemplo.java) |
-| 22 | JDBC | Acceso y manipulacion de bases de datos relacionales. | [src/JDBCConexion.java](./src/JDBCConexion.java) |
-| 23 | JPA (Entidades) | Mapeo objeto-relacional para persistencia de datos. | [src/JPAEntidad.java](./src/JPAEntidad.java) |
-| 24 | Sockets TCP | Comunicacion de datos sobre redes de computadoras. | [src/SocketTCP.java](./src/SocketTCP.java) |
-| 25 | HTTP Client | Realizacion de peticiones web de forma nativa. | [src/HttpClientEjemplo.java](./src/HttpClientEjemplo.java) |
-| 26 | Swing | Creacion de interfaces graficas tradicionales. | [src/SwingEjemplo.java](./src/SwingEjemplo.java) |
-| 27 | JavaFX | Plataforma moderna para aplicaciones de escritorio. | [src/JavaFXEjemplo.java](./src/JavaFXEjemplo.java) |
-| 28 | Modulos (JPMS) | Organizacion del codigo en unidades modulares. | [src/module-info.java](./src/module-info.java) |
-| 29 | Tests (JUnit 5) | Validacion de la logica mediante pruebas unitarias. | [test/JUnitTest.java](./test/JUnitTest.java) |
+| 1 | **Variables** | Espacio en memoria cuyo valor puede modificarse. | [src/Variables.java](./src/Variables.java) |
+| 2 | **Constantes** | Valores inmutables declarados con la palabra final. | [src/Constantes.java](./src/Constantes.java) |
+| 3 | **Operadores logicos** | Uso de conectores booleanos como and, or y not. | [src/Variables.java](./src/Variables.java) |
+| 4 | **Control de flujo** | Sentencias condicionales y bucles de repeticion. | [src/ControlFlujo.java](./src/ControlFlujo.java) |
+| 5 | **Tipos primitivos** | Formatos de datos basicos como enteros y decimales. | [src/TiposPrimitivos.java](./src/TiposPrimitivos.java) |
+| 6 | **Conversion y parsing** | Transformacion de tipos y uso de clases wrapper. | [src/ConversionParsing.java](./src/ConversionParsing.java) |
+| 7 | **Colecciones** | Estructuras para almacenar grupos de objetos. | [src/ColeccionesEjemplo.java](./src/ColeccionesEjemplo.java) |
+| 8 | **Genericos** | Definicion de estructuras con tipos parametrizados. | [src/GenericosEjemplo.java](./src/GenericosEjemplo.java) |
+| 9 | **Lambdas** | Implementacion de funciones anonimas y compactas. | [src/LambdasEjemplo.java](./src/LambdasEjemplo.java) |
+| 10 | **Streams** | Procesamiento de flujos de datos de forma funcional. | [src/StreamsEjemplo.java](./src/StreamsEjemplo.java) |
+| 11 | **Optional** | Contenedor para prevenir errores de puntero nulo. | [src/OptionalEjemplo.java](./src/OptionalEjemplo.java) |
+| 12 | **Entrada/Salida basica** | Interaccion con la consola mediante Scanner y Print. | [src/IOClasico.java](./src/IOClasico.java) |
+| 13 | **Serializacion** | Proceso de convertir objetos en flujos de bytes. | [src/SerializacionEjemplo.java](./src/SerializacionEjemplo.java) |
+| 14 | **NIO (Buffers)** | Gestion eficiente de entrada y salida de datos. | [src/NIOEjemplo.java](./src/NIOEjemplo.java) |
+| 15 | **NIO.2 (WatchService)** | Deteccion de eventos en el sistema de archivos. | [src/NIO2Ejemplo.java](./src/NIO2Ejemplo.java) |
+| 16 | **Compresion (ZIP)** | Empaquetado y lectura de archivos comprimidos. | [src/CompresionEjemplo.java](./src/CompresionEjemplo.java) |
+| 17 | **Hilos basicos** | Ejecucion simultanea de tareas mediante Thread. | [src/HilosBasicos.java](./src/HilosBasicos.java) |
+| 18 | **ExecutorService** | Administracion avanzada de hilos concurrentes. | [src/ExecutorEjemplo.java](./src/ExecutorEjemplo.java) |
+| 19 | **Colecciones Concurrentes** | Estructuras de datos seguras para multi-hilo. | [src/ConcurrentCollections.java](./src/ConcurrentCollections.java) |
+| 20 | **Locks** | Control de acceso a recursos mediante bloqueos. | [src/LocksEjemplo.java](./src/LocksEjemplo.java) |
+| 21 | **Coordinacion** | Sincronizacion de tareas entre diferentes hilos. | [src/CoordinacionEjemplo.java](./src/CoordinacionEjemplo.java) |
+| 22 | **JDBC** | Acceso y manipulacion de bases de datos relacionales. | [src/JDBCConexion.java](./src/JDBCConexion.java) |
+| 23 | **JPA (Entidades)** | Mapeo objeto-relacional para persistencia de datos. | [src/JPAEntidad.java](./src/JPAEntidad.java) |
+| 24 | **Sockets TCP** | Comunicacion de datos sobre redes de computadoras. | [src/SocketTCP.java](./src/SocketTCP.java) |
+| 25 | **HTTP Client** | Realizacion de peticiones web de forma nativa. | [src/HttpClientEjemplo.java](./src/HttpClientEjemplo.java) |
+| 26 | **Swing** | Creacion de interfaces graficas tradicionales. | [src/SwingEjemplo.java](./src/SwingEjemplo.java) |
+| 27 | **JavaFX** | Plataforma moderna para aplicaciones de escritorio. | [src/JavaFXEjemplo.java](./src/JavaFXEjemplo.java) |
+| 28 | **Modulos (JPMS)** | Organizacion del codigo en unidades modulares. | [src/module-info.java](./src/module-info.java) |
+| 29 | **Tests (JUnit 5)** | Validacion de la logica mediante pruebas unitarias. | [test/JUnitTest.java](./test/JUnitTest.java) |
